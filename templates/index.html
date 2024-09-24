@@ -1,0 +1,670 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--font-family-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext"
+		rel="stylesheet">
+
+	<!-- title of site -->
+	<title>Ankit Goswami</title>
+
+	<!-- For favicon png -->
+	
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+	<!--flat icon css-->
+	<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+	<!--owl.carousel.css-->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="{% static 'css/bootsnav.css' %}">
+
+	<!--style.css-->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+</head>
+
+<body>
+	<!-- top-area Start -->
+	<header class="top-area">
+		<div class="header-area">
+			<!-- Start Navigation -->
+			<nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+				<div class="container">
+
+					<!-- Start Header Navigation -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="index.html">Ankit Goswami</a>
+					</div>
+					<!-- End Header Navigation -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class=" smooth-menu active"></li>
+							<li class=" smooth-menu"><a href="#education">education</a></li>
+							<li class="smooth-menu"><a href="#skills">skills</a></li>
+							<li class="smooth-menu"><a href="#experience">experience</a></li>
+							<li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
+							<li class="smooth-menu"><a href="#contact">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- End Navigation -->
+		</div>
+
+		<div class="clearfix"></div>
+
+	</header>
+	
+
+	<!--welcome-hero start -->
+	<section id="welcome-hero" class="welcome-hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="header-text">
+						<h2>hi <span>,</span> i am <br> ANKIT <br> GOSWAMI <span>.</span> </h2>
+						<p>Python and Django developer</p>
+						<a href="{% static '/download/Ankit goswami.pdf' %}" download>download resume</a>
+					</div><!--/.header-text-->
+				</div><!--/.col-->
+			</div><!-- /.row-->
+		</div>
+
+	</section>
+	<!--welcome-hero end -->
+
+	<!--about start -->
+	<section id="about" class="about">
+		<div class="section-heading text-center">
+			<h2>about me</h2>
+		</div>
+		<div class="container">
+			<div class="about-content">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="single-about-txt">
+							<h3>
+								Hi, I'm Ankit Goswami, a Python developer with the experience in building web
+								applications with Django. I've worked on projects like e-commerce platforms and a
+								Spotify clone. I'm skilled in problem-solving and creating efficient, user-friendly
+								solutions. Currently, I'm focusing on Django REST Framework to build scalable APIs
+							</h3>
+							<p>
+								When I'm not coding, I enjoy learning new technologies and enhancing my skill set to
+								keep up with the latest trends. I'm also exploring opportunities on platforms like
+								Fiverr, helping businesses bring their ideas to life through custom web development.
+							</p>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>phone</h3>
+										<p><a href="tel:+91 6396643615">+91 6396643615</a></p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>email</h3>
+										<p><a href="mailto:askankit07@gmail.com">askankit07@mail.com</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-offset-1 col-sm-5">
+						<div class="single-about-img">
+							<img src="{% static 'images/about/profile_img.png' %}" alt="profile_image">
+							<div class="about-list-icon">
+								<ul>
+									<li>
+										<a href="https://github.com/askankit07/">
+											<i class="fa fa-github" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://linkedin.com/in/askankit-goswami">
+											<i class="fa fa-linkedin" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/ankit_goswami_07">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+									</li>
+
+
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--about end -->
+
+	<!--education start -->
+	<section id="education" class="education">
+		<div class="section-heading text-center">
+			<h2>education</h2>
+		</div>
+		<div class="container">
+			<div class="education-horizontal-timeline">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2017 - 2018</h2>
+								<h3>Hight School</h3>
+							</div><!--/.experience-time-->
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										A.V.I Collage
+									</h4>
+									<h5>Moradabad, Uttar Pradesh</h5>
+
+								</div><!--/.timeline-content-->
+							</div><!--/.timeline-->
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2019 - 2020</h2>
+								<h3>Intermediate</h3>
+							</div><!--/.experience-time-->
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										A.V.I Collage
+									</h4>
+									<h5>Moradabad, Uttar Pradesh</h5>
+								</div><!--/.timeline-content-->
+							</div><!--/.timeline-->
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2020 - 2023</h2>
+								<h3>bachelor <span>of </span> Computer Applications</h3>
+							</div><!--/.experience-time-->
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal spacial-horizontal-line
+									"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										IFTM university
+									</h4>
+									<h5>Moradabad, Uttar Pradesh</h5>
+								</div><!--/.timeline-content-->
+							</div><!--/.timeline-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!--education end -->
+	<!--profiles start -->
+	<section id="skills" class="profiles">
+		<div class="profiles-details">
+			<div class="section-heading text-center">
+				<h2>skills</h2>
+			</div>
+			<div class="container">
+				<div class="profiles-content">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<img src="{% static 'icons/python.svg' %}" alt="">
+									<div class="profile-icon-name">Python</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<img src="{% static 'icons/python.svg' %}" alt="">
+										<div class="profile-icon-name">Python</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<img src="{% static 'icons/django.svg' %}" alt="">
+									<div class="profile-icon-name">Django</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<img src="{% static 'icons/django.svg' %}" alt="">
+										<div class="profile-icon-name">Django</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<img src="{% static 'icons/database.svg' %}" alt="">
+									<div class="profile-icon-name">MySQL</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<img src="{% static 'icons/database.svg' %}" alt="">
+										<div class="profile-icon-name">MySQL</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile profile-no-border">
+								<div class="profile-txt">
+									<img width="30px" height="30px" src="https://img.icons8.com/ios-filled/50/api-settings.png" alt="api-settings"/>
+									<div class="profile-icon-name">REST API</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<img width="30px" height="30px" src="https://img.icons8.com/ios-filled/50/api-settings.png" alt="api-settings"/>
+										<div class="profile-icon-name">REST API</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="profile-border"></div>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<img src="{% static 'icons/javascript.svg' %}" alt="">
+									<div class="profile-icon-name">javascript</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<img src="{% static 'icons/javascript.svg' %}" alt="">
+										<div class="profile-icon-name">javascript</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<img src="{% static 'icons/htmlCss.svg' %}" alt="">
+									<div class="profile-icon-name">CSS</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<img src="{% static 'icons/htmlCss.svg' %}" alt="">
+										<div class="profile-icon-name">CSS</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<img src="{% static 'icons/htmlCss.svg' %}" alt="">
+									<div class="profile-icon-name">HTML</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<img src="{% static 'icons/htmlCss.svg' %}" alt="">
+										<div class="profile-icon-name">HTML</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile profile-no-border">
+								<div class="profile-txt">
+									<img src="{% static 'icons/github.svg' %}" alt="">
+									<div class="profile-icon-name">Github</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<img src="{% static 'icons/github.svg' %}" alt="">
+										<div class="profile-icon-name">Github</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!--profiles end -->
+
+	<!--experience start -->
+	<section id="experience" class="experience">
+		<div class="section-heading text-center">
+			<h2>experience</h2>
+		</div>
+		<div class="container">
+			<div class="experience-content">
+				<div class="main-timeline">
+					<ul>
+						<li>
+							<div class="single-timeline-box fix">
+								<div class="row">
+									
+									<div class="col-md-5">
+										<div class="timeline">
+											<div class="timeline-content text-right">
+												<h4 class="title">
+													Bluflares
+												</h4>
+												<h5>Pitampura, Delhi</h5>
+												<p class="description">
+													After my internship, I worked as a full-time Django developer at Bluflares for 6 months. I contributed to developing and optimizing web applications, focusing on APIs, performance, and security, while collaborating with cross-functional teams.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-offset-1 col-md-5 experience-time-main">
+										<div class="experience-time">
+											<h2>
+												<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+												Nov-2023 - 2013
+											</h2>
+											<h3>Django developer</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="single-timeline-box fix">
+								<div class="row">
+									<div class="col-md-5">
+										<div class="experience-time text-right">
+											<h2>Nov 2023 - Jun 2024</h2>
+											<h3>Django developer intern</h3>
+										</div>
+									</div>
+									<div class="col-md-offset-1 col-md-5">
+										<div class="timeline">
+											<div class="timeline-content">
+												<h4 class="title">
+													<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+													Bluflares
+												</h4>
+												<h5>Pitampura, Delhi</h5>
+												<p class="description">
+													During my 3-month internship at Bluflares, I worked on Django-based web applications, focusing on backend development and database management. This experience helped me build a strong foundation in Django and web technologies.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+
+	<!--portfolio start -->
+	<section id="portfolio" class="portfolio">
+		<div class="portfolio-details">
+			<div class="section-heading text-center">
+				<h2>portfolio</h2>
+			</div>
+			<div class="container">
+				<div class="portfolio-content">
+					<div class="isotope">
+						<div class="row">
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{% static 'images/portfolio/p1.jpeg' %}" alt="portfolio image" />
+									<div class="isotope-overlay">
+										<a href="http://64.227.188.237/">
+											web development
+										</a>
+									</div>
+								</div>
+								<div class="item">
+									<img src="{% static 'images/portfolio/p2.jpeg' %}" alt="portfolio image" />
+									<div class="isotope-overlay">
+										<a href="http://64.227.188.237/">
+											web development
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{% static 'images/portfolio/p5.jpeg' %}" alt="portfolio image" />
+									<div class="isotope-overlay">
+										<a href="http://64.227.162.85/">
+											web development
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{% static 'images/portfolio/p3.jpeg' %}" alt="portfolio image" />
+									<div class="isotope-overlay">
+										<a href="http://64.227.162.85/">
+											web development
+										</a>
+									</div>
+								</div>
+								<div class="item">
+									<img src="{% static 'images/portfolio/p4.jpeg' %}" alt="portfolio image" />
+									<div class="isotope-overlay">
+										<a href="http://64.227.162.85/">
+											web development
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!--portfolio end -->
+
+	<!--contact start -->
+	<section id="contact" class="contact">
+		<div class="section-heading text-center">
+			<h2>contact me</h2>
+		</div>
+		<div class="container">
+
+			<form action="contact" method="post">
+				{% comment %} {% csrf_token %}
+				<input type="text" name="name">
+				<input type="email" name="email">
+				<input type="text" name="subject">
+				<textarea name="message" id="" rows="8"></textarea>
+				<button type="submit">submit</button> {% endcomment %}
+			</form>
+			<div class="contact-content">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-5 col-sm-6">
+						<div class="single-contact-box">
+							<div class="contact-form">
+								<form method="post" action="contact">
+									{% csrf_token %}
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+													<input type="text" name="name" class="form-control" id="name" placeholder="Name*" required>
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+													<input type="email" name="email" class="form-control" id="email" placeholder="Email*" required>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+													<input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+													<textarea name="message" id="comment" rows="8" class="form-control" placeholder="Message"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="single-contact-btn">
+												<button type="submit">Submit</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-offset-1 col-md-5 col-sm-6">
+						<div class="single-contact-box">
+							<div class="contact-adress">
+								<div class="contact-add-head">
+									<h3>Ankit goswami</h3>
+									<p>Django developer</p>
+								</div>
+								<div class="contact-add-info">
+									<div class="single-contact-add-info">
+										<h3>phone</h3>
+										<p><a href="tel:+91 6396643615">+91 6396643615</a></p>
+									</div>
+									<div class="single-contact-add-info">
+										<h3>email</h3>
+										<p><a href="mailto:askankit07@gmail.com">askankit07@gmail.com</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="hm-foot-icon">
+								<ul>
+									<li><a href="https://github.com/askankit07/"><img src="{% static 'icons/github.svg' %}" alt="" width="20px"></a></li>
+									<li><a href="https://linkedin.com/in/askankit-goswami"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+									<li><a href="https://www.instagram.com/ankit_goswami_07"><i class="fa fa-instagram"></i></a></li><!--/li-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!--contact end -->
+
+	<!--footer-copyright start-->
+	<footer id="footer-copyright" class="footer-copyright">
+
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top"></i>
+			</div>
+
+		</div>
+
+	</footer>
+	<!--footer-copyright end-->
+
+	<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+	<script src="{% static 'js/jquery.js' %}"></script>
+
+	<!--modernizr.min.js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<!--bootstrap.min.js-->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+	<!-- bootsnav js -->
+	<script src="{% static 'js/bootsnav.js' %}"></script>
+
+	<!-- jquery.sticky.js -->
+	<script src="{% static 'js/jquery.sticky.js' %}"></script>
+
+	<!-- for progress bar start-->
+
+	<!-- progressbar js -->
+	<script src="{% static 'js/progressbar.js' %}"></script>
+
+	<!-- appear js -->
+	<script src="{% static 'js/jquery.appear.js' %}"></script>
+
+	<!-- for progress bar end -->
+
+	<!--owl.carousel.js-->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+	<!--Custom JS-->
+	<script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+
+</html>
