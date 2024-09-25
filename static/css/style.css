@@ -149,10 +149,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: black;}
 /*.navbar-toggle */
 
 
-
-/*-------------------------------------
-        3.  Welcome-hero
---------------------------------------*/
 .welcome-hero{
     display: flex;
     align-items: center;
@@ -287,12 +283,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: black;}
 }
 /*.ab-list-icon */
 
-/*.single-about-img */
-
-/*-------------------------------------
-        5.  Education
---------------------------------------*/
-
 .education {
     background:  #f9fbfd;
     padding-top:  50px;
@@ -329,14 +319,6 @@ span.single-timeline-horizontal {
 span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.timeline-horizontal-border*/
 
-/*.education-horizontal-timeline*/
-
-/*-------------------------------------
-        6.  Skills
---------------------------------------*/
-/* .skills {
-    
-} */
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
 .section-heading h2 {
@@ -400,9 +382,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
    margin-left: 0;
 }
 
-/*-------------------------------------
-        7. Experience
--------------------------------------*/
 .experience {
     padding: 50px 0 100px;
     border-top: 1px solid #e5ebf2;
@@ -481,9 +460,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .experience-time-responsive{display: none;}
-/*-------------------------------------
-        8. Profiles
---------------------------------------*/
+
 .profiles {
     padding:  50px 0 100px;
     border:  1px solid #e5ebf2;
@@ -556,9 +533,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .single-profile:hover .profile-icon-name,.single-profile:hover .profile-txt a>i{color: #fff;}
 .single-profile:hover .profile-border {border:transparent;}
-/*-------------------------------------
-        9. Portfolio
---------------------------------------*/
+
 .portfolio {
     padding:  50px 0 100px;
     border:  1px solid #e5ebf2;
@@ -631,24 +606,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform:scale(1);
     top:0;
 }/*.isotope-overlay*/
-
-/*-------------------------------------
-        10. Clients
---------------------------------------*/
-.clients {padding-top: 50px;}
-.clients-area {
-    display: flex;
-    align-items: center;
-    height: 250px;
-}
-.clients-area .item {padding: 0 25px;}
-
-.clients .clients-area .owl-carousel .owl-item img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius:0;
-}
 
 /*-------------------------------------
         11. Contact

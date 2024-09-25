@@ -1,11 +1,9 @@
-from django.shortcuts import render
+from django.urls import reverse
+from django.shortcuts import render,redirect
 from django.core.mail import send_mail
 from django.conf import settings
 
 def home(request):
-    return render(request,'index.html')
-
-def contact_view(request):
     if request.method == "POST":
             
         name = request.POST.get('name')
@@ -20,8 +18,9 @@ def contact_view(request):
           [settings.DEFAULT_TO_EMAIL],
           fail_silently=False,  
         )
-        email.send()
-        
-        return render(request,'index.html')
+        return redirect(f"{reverse('home')}?name={name}")
 
-    return render(request,'index.html')
+    # Retrieve the name from query parameters
+    name = request.GET.get('name')
+    
+    return render(request,'index.html',{'name': name})

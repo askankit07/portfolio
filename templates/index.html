@@ -47,6 +47,13 @@
 </head>
 
 <body>
+	{% if name %}
+	<div class="alert alert-dark" role="alert" style="margin: 0px;">
+		<p><b>Thank you, {{ name }}! Your message has been sent.</b></p>
+	</div>
+	{% endif %}
+		
+
 	<!-- top-area Start -->
 	<header class="top-area">
 		<div class="header-area">
@@ -83,7 +90,6 @@
 		<div class="clearfix"></div>
 
 	</header>
-	
 
 	<!--welcome-hero start -->
 	<section id="welcome-hero" class="welcome-hero">
@@ -388,72 +394,80 @@
 		</div>
 		<div class="container">
 			<div class="experience-content">
-				<div class="main-timeline">
-					<ul>
-						<li>
-							<div class="single-timeline-box fix">
-								<div class="row">
-									
-									<div class="col-md-5">
-										<div class="timeline">
-											<div class="timeline-content text-right">
-												<h4 class="title">
-													Bluflares
-												</h4>
-												<h5>Pitampura, Delhi</h5>
-												<p class="description">
-													After my internship, I worked as a full-time Django developer at Bluflares for 6 months. I contributed to developing and optimizing web applications, focusing on APIs, performance, and security, while collaborating with cross-functional teams.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-offset-1 col-md-5 experience-time-main">
-										<div class="experience-time">
-											<h2>
-												<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-												Nov-2023 - 2013
-											</h2>
-											<h3>Django developer</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="single-timeline-box fix">
-								<div class="row">
-									<div class="col-md-5">
-										<div class="experience-time text-right">
-											<h2>Nov 2023 - Jun 2024</h2>
-											<h3>Django developer intern</h3>
-										</div>
-									</div>
-									<div class="col-md-offset-1 col-md-5">
-										<div class="timeline">
-											<div class="timeline-content">
-												<h4 class="title">
+					<div class="main-timeline">
+						<ul>
+							<li>
+								<div class="single-timeline-box fix">
+									<div class="row">
+										<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+											<div class="experience-time">
+												<h2>
 													<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-													Bluflares
-												</h4>
-												<h5>Pitampura, Delhi</h5>
-												<p class="description">
-													During my 3-month internship at Bluflares, I worked on Django-based web applications, focusing on backend development and database management. This experience helped me build a strong foundation in Django and web technologies.
-												</p>
+													Feb-2023 - July 2024
+												</h2>
+												<h3>Django developer</h3>
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="timeline">
+												<div class="timeline-content text-right">
+													<h4 class="title">
+														Bluflares
+													</h4>
+													<h5>Pitampura, Delhi</h5>
+													<p class="description">
+														After my internship, I worked as a full-time Django developer at Bluflares for 6 months. I contributed to developing and optimizing web applications, focusing on APIs, performance, and security, while collaborating with cross-functional teams.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-offset-1 col-md-5 experience-time-main">
+											<div class="experience-time">
+												<h2>
+													<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+													Feb-2023 - July 2024
+												</h2>
+												<h3>Django developer</h3>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</li>
+							</li>
 
-					</ul>
+							<li>
+								<div class="single-timeline-box fix">
+									<div class="row">
+										<div class="col-md-5">
+											<div class="experience-time text-right">
+												<h2>Nov 2023 - Jun 2024</h2>
+												<h3>Django developer intern</h3>
+											</div>
+										</div>
+										<div class="col-md-offset-1 col-md-5">
+											<div class="timeline">
+												<div class="timeline-content">
+													<h4 class="title">
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														Bluflares
+													</h4>
+													<h5>Pitampura, Delhi</h5>
+													<p class="description">
+														During my 3-month internship at Bluflares, I worked on Django-based web applications, focusing on backend development and database management. This experience helped me build a strong foundation in Django and web technologies.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
 				</div>
-			</div>
 		</div>
 
 	</section>
-	
+	<!--experience end -->
 
 	<!--portfolio start -->
 	<section id="portfolio" class="portfolio">
@@ -530,20 +544,12 @@
 		</div>
 		<div class="container">
 
-			<form action="contact" method="post">
-				{% comment %} {% csrf_token %}
-				<input type="text" name="name">
-				<input type="email" name="email">
-				<input type="text" name="subject">
-				<textarea name="message" id="" rows="8"></textarea>
-				<button type="submit">submit</button> {% endcomment %}
-			</form>
 			<div class="contact-content">
 				<div class="row">
 					<div class="col-md-offset-1 col-md-5 col-sm-6">
 						<div class="single-contact-box">
 							<div class="contact-form">
-								<form method="post" action="contact">
+								<form method="post" action="">
 									{% csrf_token %}
 									<div class="row">
 										<div class="col-sm-6 col-xs-12">
@@ -573,9 +579,11 @@
 									</div>
 									<div class="row">
 										<div class="col-sm-12">
-											<div class="single-contact-btn">
-												<button type="submit">Submit</button>
+											<button type="submit" style="width: 100%">
+											<div class="single-contact-btn" type='submit'>
+												Submit
 											</div>
+										</button>
 										</div>
 									</div>
 								</form>
@@ -602,7 +610,7 @@
 							</div>
 							<div class="hm-foot-icon">
 								<ul>
-									<li><a href="https://github.com/askankit07/"><img src="{% static 'icons/github.svg' %}" alt="" width="20px"></a></li>
+									<li><a href="https://github.com/askankit07/"><img src="{% static 'icons/github.svg' %}" alt="" width="15px"></a></li>
 									<li><a href="https://linkedin.com/in/askankit-goswami"><i class="fa fa-linkedin"></i></a></li><!--/li-->
 									<li><a href="https://www.instagram.com/ankit_goswami_07"><i class="fa fa-instagram"></i></a></li><!--/li-->
 								</ul>
@@ -627,6 +635,7 @@
 		</div>
 
 	</footer>
+
 	<!--footer-copyright end-->
 
 	<!-- Include all js compiled plugins (below), or include individual files as needed -->

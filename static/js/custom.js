@@ -1,21 +1,5 @@
 $(document).ready(function(){
 	"use strict";
-    
-        /*==================================
-* Author        : "ThemeSine"
-* Template Name : Khanas HTML Template
-* Version       : 1.0
-==================================== */
-
-
-
-/*=========== TABLE OF CONTENTS ===========
-1. Scroll To Top 
-2. Smooth Scroll spy
-3. Progress-bar
-4. owl carousel
-5. welcome animation support
-======================================*/
 
     // 1. Scroll To Top 
 		$(window).on('scroll',function () {
@@ -40,7 +24,6 @@ $(document).ready(function(){
            topSpacing:0
         });
 		
-		//=============
 
 		$('li.smooth-menu a').bind("click", function(event) {
 			event.preventDefault();
@@ -124,4 +107,18 @@ $(document).ready(function(){
         });
 
 });	
-	
+
+
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
